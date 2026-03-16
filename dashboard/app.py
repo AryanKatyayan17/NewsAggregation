@@ -134,3 +134,25 @@ if selected_article != "Select an article...":
 
     st.markdown(f"### {article_row['title']}")
     st.write(article_data["text"])
+
+st.subheader("Watch live global news streams from major broadcasters.")
+
+# Dictionary of live YouTube streams
+LIVE_STREAMS = {
+    "Bloomberg Live": "https://www.youtube.com/watch?v=iEpJwprxDdk",
+    "Sky News Live": "https://www.youtube.com/watch?v=YDvsBbKfLPA",
+    "CNN Live": "https://www.youtube.com/watch?v=XyDtqzrTs5Y",
+    "Al Jazeera Live": "https://www.youtube.com/watch?v=gCNeDWCI0vo",
+    "France 24 Live": "https://www.youtube.com/watch?v=Ap-UM1O9RBU"
+}
+
+# Sidebar channel selector
+selected_channel = st.sidebar.selectbox(
+    "Choose a Live News Channel",
+    list(LIVE_STREAMS.keys())
+)
+
+st.subheader(selected_channel)
+
+# Display selected live stream
+st.video(LIVE_STREAMS[selected_channel])
