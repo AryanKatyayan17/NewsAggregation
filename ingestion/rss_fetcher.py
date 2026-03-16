@@ -4,7 +4,6 @@ import feedparser
 
 RSS_FEEDS={
     "BBC World":"https://feeds.bbci.co.uk/news/world/rss.xml",
-    "Reuters World":"https://www.reutersagency.com/feed/?best-topics=world&post_type=best",
     "Al Jazeera":"https://www.aljazeera.com/xml/rss/all.xml",
     "CNN World":"http://rss.cnn.com/rss/edition_world.rss"
 }
