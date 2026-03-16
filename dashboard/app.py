@@ -118,7 +118,7 @@ if trending_locations:
 else:
     st.write("No trends detected.")
 
-
+# Read the Articles
 st.subheader("Read Article")
 
 selected_article= st.selectbox(
