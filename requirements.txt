@@ -1,0 +1,12 @@
+streamlit
+pandas
+plotly
+streamlit-autorefresh
+spacy
+transformers
+torch
+geopy
+feedparser
+newspaper4k
+groq
+python-dotenv
