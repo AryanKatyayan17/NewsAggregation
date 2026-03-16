@@ -1,2 +1,4 @@
 wm/
 __pycache__/
+.env/
+test.py/
