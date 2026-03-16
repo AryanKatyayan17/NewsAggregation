@@ -16,7 +16,7 @@ st.title("Global Event Monitor")
 st_autorefresh(interval=60000, key="datarefresh")
 
 # Fetch and Process Data
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=60)
 def load_events():
     raw_events= fetch_all_feeds()
     return process_events(raw_events)
